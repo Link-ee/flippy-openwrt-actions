@@ -95,7 +95,7 @@ on:
         options:
           - ophub
           - angel
-          - yourname
+          - Link
 
 env:
   TZ: America/New_York
@@ -154,7 +154,7 @@ jobs:
         working-directory: /builder
         if: ${{ steps.init.outputs.status }} == 'success' && !cancelled()
         run: |
-          armvirt_tarfile_repo="ophub/amlogic-s9xxx-openwrt"
+          armvirt_tarfile_repo="Link-ee/flippy-openwrt-actions"
           releases_tag_keywords="OpenWrt_lede"
 
           armvirt_tarfile_path="openwrt/bin/targets/armvirt/64"
